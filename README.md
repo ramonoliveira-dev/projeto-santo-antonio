@@ -28,4 +28,4 @@ O projeto foi construído sem o uso de frameworks externos para priorizar o apre
 
 O projeto está publicado e pode ser acessado diretamente pelo link abaixo:
 
-🔗 **[Acessar o site do Grupo de Oração Santo Antônio](https://projeto-santo-antonio.vercel.app/index.html)**
+🔗 **[Acessar o site do Grupo de Oração Santo Antônio]([https://projeto-santo-antonio.vercel.app/index.html](https://santoantoniogranja.vercel.app/))**
