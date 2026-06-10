@@ -136,7 +136,7 @@ body {
 .hero {
    /* O linear-gradient aplica a película escura e o url() puxa a sua imagem local */
     background: linear-gradient(rgba(48, 12, 20, 0.75), rgba(30, 21, 24, 0.85)),
-                url('imgs/santo-antonio-banner.jpg') center/cover no-repeat;
+                url('imgs/santo-antonio-banner2.jpg') center/cover no-repeat;
     color: var(--text-light);
     /* Aumentei o padding de 90px para 120px para a imagem aparecer mais */
     padding: 120px 0; 
