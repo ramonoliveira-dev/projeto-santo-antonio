@@ -4,17 +4,15 @@
 
 ## 📖 Sobre o Projeto
 
-Este repositório contém o código-fonte do trabalho prático de **Atividade Extensionista II: Tecnologia Aplicada à Inclusão Digital** do curso de CST em Análise e Desenvolvimento de Sistemas da UNINTER. 
+Este repositório contém o código-fonte do trabalho prático de **Atividade Extensionista II: Tecnologia Aplicada à Inclusão Digital** do Curso Tecnólogo em Análise e Desenvolvimento de Sistemas da UNINTER. 
 
-O objetivo principal foi criar uma presença digital acessível e acolhedora para o Grupo de Oração Santo Antônio, focando na divulgação de seus encontros semanais e, principalmente, na organização de suas obras de ação social (como doação de roupas e distribuição de alimentos).
+O objetivo principal foi criar uma presença digital acessível e acolhedora para o Grupo de Oração Santo Antônio, focando na divulgação de seus encontros semanais e na organização de suas obras de ação social.
 
 ## ✨ Funcionalidades e Diferenciais
 
 - **Interface Responsiva:** Layout adaptável para smartphones, tablets e desktops utilizando CSS Grid e Flexbox.
-- **Animações Orgânicas (Scroll Reveal):** Implementação de `IntersectionObserver` em Vanilla JavaScript para o surgimento suave dos elementos durante a rolagem da página, fugindo do visual "estático".
 - **Design Temático:** Paleta de cores litúrgicas (tons de vinho e dourado) e tipografia clássica (`Cinzel` e `Inter`) para transmitir seriedade e acolhimento.
 - **Integração de Mapa:** Incorporação de iframe responsivo do Google Maps apontando para a sede do grupo.
-- **Navegação Mobile:** Menu "hamburguer" interativo e otimizado para navegação em telas menores.
 
 ## 🛠️ Tecnologias Utilizadas
 
