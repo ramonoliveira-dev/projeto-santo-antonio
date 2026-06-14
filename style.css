@@ -1,21 +1,4 @@
-:root {
-    --primary-color: #6b1d2f;    
-    --primary-light: #8b2b43;
-    --accent-color: #d4af37;    
-    --accent-hover: #bda031;
-    --bg-warm: #fdfbf7;       
-    --bg-white: #ffffff;
-    --bg-card-dark: #1e1518;     
-    --text-dark: #2b2b2b;       
-    --text-light: #f5f5f5;
-    --text-muted: #666666;
-    --border-color: #e6e0d5;
-    
-    --font-heading: 'Cinzel', serif;
-    --font-body: 'Inter', sans-serif;
-}
-
-
+/* Geral */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -27,9 +10,9 @@ html {
 }
 
 body {
-    font-family: var(--font-body);
-    background-color: var(--bg-warm);
-    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfbf7;
+    color: #2b2b2b;
     line-height: 1.6;
 }
 
@@ -42,8 +25,8 @@ body {
 
 /* Cabeçalho e Navegação */
 .main-header {
-    background-color: var(--bg-white);
-    border-bottom: 3px solid var(--primary-color);
+    background-color: #ffffff;
+    border-bottom: 3px solid #6b1d2f;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
@@ -65,21 +48,21 @@ body {
 
 .cross-icon {
     font-size: 28px;
-    color: var(--primary-color);
+    color: #6b1d2f;
     font-weight: bold;
 }
 
 .logo-text h1 {
-    font-family: var(--font-heading);
+    font-family: 'Cinzel', serif;
     font-size: 20px;
-    color: var(--primary-color);
+    color: #6b1d2f;
     letter-spacing: 1px;
     line-height: 1.2;
 }
 
 .logo-text p {
     font-size: 11px;
-    color: var(--text-muted);
+    color: #666666;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -94,7 +77,7 @@ body {
     background: none;
     border: none;
     font-size: 28px;
-    color: var(--primary-color);
+    color: #6b1d2f;
     cursor: pointer;
 }
 
@@ -106,7 +89,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: #2b2b2b;
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
@@ -118,7 +101,7 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--primary-color);
+    color: #6b1d2f;
 }
 
 .nav-links a.active::after,
@@ -129,19 +112,17 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--accent-color);
+    background-color: #d4af37;
 }
 
-/* Hero Section */
+/* Seção Hero  */
 .hero {
-   /* O linear-gradient aplica a película escura e o url() puxa a sua imagem local */
     background: linear-gradient(rgba(48, 12, 20, 0.75), rgba(30, 21, 24, 0.85)),
                 url('imgs/santo-antonio-banner2.jpg') center/cover no-repeat;
-    color: var(--text-light);
-    /* Aumentei o padding de 90px para 120px para a imagem aparecer mais */
+    color: #f5f5f5;
     padding: 120px 0; 
     text-align: center;
-    border-bottom: 4px solid var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);;
 }
 
 .hero-content {
@@ -153,13 +134,13 @@ body {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--accent-color);
+    color: #d4af37;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 .hero h2 {
-    font-family: var(--font-heading);
+    font-family: 'Cinzel', serif;
     font-size: 26px;
     font-weight: 500;
     line-height: 1.4;
@@ -187,16 +168,16 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--accent-color);
+    background-color: #d4af37;
     color: #1e1518;
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-hover);
+    background-color: #bda031;
     transform: translateY(-2px);
 }
 
-/* Layouts de Grade Flexíveis/Grid (Para Navegadores Modernos) */
+/* Layouts de Grade Flexíveis/Grid */
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,22 +208,22 @@ body {
 }
 
 .section-title h3 {
-    font-family: var(--font-heading);
+    font-family: 'Cinzel', serif;
     font-size: 24px;
-    color: var(--primary-color);
+    color: #6b1d2f;
     margin-bottom: 10px;
 }
 
 .section-title p {
-    color: var(--text-muted);
+    color: #666666;
     font-size: 15px;
 }
 
 /* Cartões de Conteúdo */
 .about-text h3 {
-    font-family: var(--font-heading);
+    font-family: 'Cinzel', serif;
     font-size: 24px;
-    color: var(--primary-color);
+    color: #6b1d2f;
     margin-bottom: 20px;
 }
 
@@ -253,39 +234,39 @@ body {
 }
 
 .card-accent {
-    background-color: var(--bg-white);
-    border-left: 4px solid var(--accent-color);
+    background-color: #ffffff;
+    border-left: 4px solid #d4af37;
     padding: 20px;
     margin-top: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
 
 .card-accent h4 {
-    color: var(--primary-color);
+    color: #6b1d2f;
     margin-bottom: 8px;
     font-size: 16px;
 }
 
 .info-box {
-    background-color: var(--bg-white);
-    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    border: 1px solid #e6e0d5;
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 4px;
 }
 
 .info-box h5 {
-    font-family: var(--font-heading);
-    color: var(--primary-color);
+    font-family: 'Cinzel', serif;
+    color: #6b1d2f;
     font-size: 15px;
     margin-bottom: 10px;
 }
 
 /* Cartões da Agenda */
 .agenda-card {
-    background-color: var(--bg-white);
-    border: 1px solid var(--border-color);
-    border-top: 4px solid var(--primary-color);
+    background-color: #ffffff;
+    border: 1px solid #e6e0d5;
+    border-top: 4px solid #6b1d2f;
     padding: 30px 25px;
     border-radius: 4px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.02);
@@ -297,7 +278,7 @@ body {
 }
 
 .agenda-card.highlighted {
-    border-top-color: var(--accent-color);
+    border-top-color: #d4af37;
     background-color: #fffdf9;
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.1);
 }
@@ -312,7 +293,7 @@ body {
 }
 
 .day-tag {
-    color: var(--primary-color);
+    color: #6b1d2f;
     background-color: rgba(107, 29, 47, 0.06);
     padding: 4px 10px;
     border-radius: 20px;
@@ -324,12 +305,12 @@ body {
 }
 
 .time-tag {
-    color: var(--text-muted);
+    color: #666666;
     padding: 4px 0;
 }
 
 .agenda-card h4 {
-    font-family: var(--font-heading);
+    font-family: 'Cinzel', serif;
     color: #1e1518;
     font-size: 17px;
     margin-bottom: 12px;
@@ -343,7 +324,7 @@ body {
 /* Área de Localização */
 .address-box {
     background-color: rgba(107, 29, 47, 0.03);
-    border: 1px dashed var(--primary-color);
+    border: 1px dashed #6b1d2f;
     padding: 25px;
     margin: 25px 0;
     border-radius: 4px;
@@ -351,18 +332,18 @@ body {
 
 .address-box p {
     margin-bottom: 5px;
-    color: var(--text-dark);
+    color: #2b2b2b;
 }
 
 .subtext {
     font-size: 12px;
-    color: var(--text-muted);
+    color: #666666;
     font-style: italic;
 }
 
 .map-placeholder {
     background-color: #eae5db;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e6e0d5;
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -371,7 +352,7 @@ body {
 }
 
 .map-box {
-    background-color: var(--bg-white);
+    background-color: #ffffff;
     width: 100%;
     height: 320px;
     display: flex;
@@ -389,7 +370,7 @@ body {
 
 .map-address {
     font-size: 13px;
-    color: var(--text-muted);
+    color: #666666;
     margin: 5px 0 20px 0;
 }
 
@@ -406,18 +387,18 @@ body {
 
 /* Estilos de Banner da Página de Ajuda */
 .page-banner {
-    background: linear-gradient(rgba(30, 21, 24, 0.85), rgba(30, 21, 24, 0.95)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path d="M30 5 L35 20 L50 20 L38 30 L43 45 L30 35 L17 45 L22 30 L10 20 L25 20 Z" fill="%236b1d2f" fill-opacity="0.15"/></svg>');
-    color: var(--text-light);
+    background: linear-gradient(rgba(30, 21, 24, 0.85), rgba(30, 21, 24, 0.95));
+    color: #f5f5f5;
     padding: 60px 0;
     text-align: center;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid #6b1d2f;
 }
 
 .page-banner h2 {
-    font-family: var(--font-heading);
+    font-family: 'Cinzel', serif;
     font-size: 24px;
     margin-bottom: 10px;
-    color: var(--accent-color);
+    color: #d4af37;
 }
 
 .page-banner p {
@@ -427,8 +408,8 @@ body {
 
 /* Cartões de Projetos Sociais */
 .project-card {
-    background-color: var(--bg-white);
-    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    border: 1px solid #e6e0d5;
     padding: 35px;
     border-radius: 4px;
     position: relative;
@@ -458,8 +439,8 @@ body {
 }
 
 .project-card h4 {
-    font-family: var(--font-heading);
-    color: var(--primary-color);
+    font-family: 'Cinzel', serif;
+    color: #6b1d2f;
     font-size: 19px;
     margin-bottom: 15px;
     margin-right: 80px;
@@ -472,37 +453,37 @@ body {
 }
 
 .project-meta {
-    background-color: var(--bg-warm);
-    border-top: 2px solid var(--border-color);
+    background-color: #fdfbf7;
+    border-top: 2px solid #e6e0d5;
     padding-top: 15px;
 }
 
 .project-meta h5 {
     font-size: 12px;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: #6b1d2f;
     margin-bottom: 5px;
 }
 
 .project-meta p {
     font-size: 13px;
-    color: var(--text-muted);
+    color: #666666;
     margin-bottom: 0;
 }
 
 /* Caixa Escura para Tabelas */
 .card-dark {
-    background-color: var(--bg-card-dark);
-    color: var(--text-light);
+    background-color: #1e1518;
+    color: #f5f5f5;
     padding: 45px 40px;
     border-radius: 6px;
-    border-bottom: 4px solid var(--accent-color);
+    border-bottom: 4px solid #d4af37;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .card-dark h3 {
-    font-family: var(--font-heading);
-    color: var(--accent-color);
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
     font-size: 22px;
     margin-bottom: 10px;
     text-align: center;
@@ -530,7 +511,7 @@ body {
 
 .custom-table th {
     background-color: rgba(255,255,255,0.06);
-    color: var(--accent-color);
+    color: #d4af37;
     font-weight: 600;
     padding: 14px;
     border-bottom: 2px solid rgba(212, 175, 55, 0.3);
@@ -551,14 +532,14 @@ body {
 
 /* Guia de Ajuda Coletivo */
 .help-guide .guide-box {
-    background-color: var(--bg-white);
-    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    border: 1px solid #e6e0d5;
     padding: 35px;
     border-radius: 4px;
 }
 
 .guide-box h4 {
-    font-family: var(--font-heading);
+    font-family: 'Cinzel', serif;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -568,7 +549,7 @@ body {
 }
 
 .guide-box.beneficiary h4 {
-    color: var(--primary-color);
+    color: #6b1d2f;
 }
 
 .guide-box p {
@@ -593,7 +574,7 @@ body {
     content: "•";
     position: absolute;
     left: 0;
-    color: var(--accent-color);
+    color: #d4af37;
     font-weight: bold;
 }
 
@@ -611,9 +592,7 @@ body {
     margin-bottom: 5px;
 }
 
-/*
-    ANIMAÇÕES
-*/
+/* Aimações */
 
 .reveal {
     opacity: 0;
@@ -621,12 +600,10 @@ body {
     transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 .btn {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -638,7 +615,6 @@ body {
     box-shadow: 0 8px 15px rgba(212, 175, 55, 0.3);
 }
 
-
 .agenda-card, .project-card, .guide-box {
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -646,12 +622,10 @@ body {
 .agenda-card:hover, .project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(107, 29, 47, 0.08);
-    border-color: rgba(212, 175, 55, 0.5); /* Borda levemente dourada no hover */
+    border-color: rgba(212, 175, 55, 0.5);
 }
 
-/*
-   RESPONSIVIDADE 
- */
+/* Responsividade */
 
 @media (max-width: 850px) {
     .grid-3 {
@@ -677,17 +651,17 @@ body {
     }
     
     .nav-links {
-        display: none; /* Controlado via JS */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--bg-white);
+        background-color: #ffffff;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         padding: 20px;
         gap: 15px;
-        border-bottom: 2px solid var(--primary-color);
+        border-bottom: 2px solid #6b1d2f;
     }
     
     .nav-links.active {
@@ -716,9 +690,3 @@ body {
         display: inline-block;
     }
 }
-
-
-
-
-
-
