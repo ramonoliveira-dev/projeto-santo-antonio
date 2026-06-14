@@ -392,18 +392,6 @@ body {
     to { opacity: 1; }
 }
 
-@media (max-width: 850px) {
-    .agenda-slider-container {
-        height: 400px;
-    }
-    .slide-content {
-        padding: 0 25px;
-    }
-    .slide-content h3 {
-        font-size: 24px;
-    }
-}
-
 /* Estilos para o botão do WhatsApp */
 
 .contact-wrapper {
@@ -854,5 +842,17 @@ body {
     .project-badge {
         position: static;
         display: inline-block;
+    }
+}
+
+@media (max-width: 850px) {
+    .agenda-slider-container {
+        height: 400px;
+    }
+    .slide-content {
+        padding: 0 25px;
+    }
+    .slide-content h3 {
+        font-size: 24px;
     }
 }
