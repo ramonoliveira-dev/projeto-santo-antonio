@@ -321,6 +321,44 @@ body {
     color: #555;
 }
 
+/* Estilos para o botão do WhatsApp */
+
+.contact-wrapper {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-wrapper p {
+    margin-bottom: 0;
+    color: #2b2b2b;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #2e6930;
+    color: #ffffff;
+    padding: 5px 12px; 
+    border-radius: 4px; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px; 
+    transition: background-color 0.3s ease;
+}
+
+
+.whatsapp-btn img {
+    width: 15px; 
+    height: 15px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1e4520; 
+}
+
 /* Área de Localização */
 .address-box {
     background-color: rgba(107, 29, 47, 0.03);
@@ -530,12 +568,19 @@ body {
     background-color: rgba(255,255,255,0.02);
 }
 
-/* Guia de Ajuda Coletivo */
+/* Guia de Ajuda */
 .help-guide .guide-box {
     background-color: #ffffff;
     border: 1px solid #e6e0d5;
     padding: 35px;
     border-radius: 4px;
+}
+
+.guide-box.emphasis-box {
+    padding: 50px;
+    text-align: center;
+    border-top: 4px solid #2e6930;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .guide-box h4 {
@@ -544,12 +589,12 @@ body {
     margin-bottom: 15px;
 }
 
-.guide-box.volunteer h4 {
-    color: #2e6930;
+.guide-box.emphasis-box h4 {
+    font-size: 24px;
 }
 
-.guide-box.beneficiary h4 {
-    color: #6b1d2f;
+.guide-box.volunteer h4 {
+    color: #2e6930;
 }
 
 .guide-box p {
@@ -558,8 +603,19 @@ body {
     margin-bottom: 15px;
 }
 
+.guide-box.emphasis-box p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
 .guide-box ul {
     list-style-type: none;
+}
+
+.guide-box.emphasis-box .centered-list {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .guide-box ul li {
@@ -568,6 +624,11 @@ body {
     margin-bottom: 10px;
     padding-left: 18px;
     position: relative;
+}
+
+.guide-box.emphasis-box .centered-list li {
+    font-size: 15px;
+    margin-bottom: 12px;
 }
 
 .guide-box ul li::before {
