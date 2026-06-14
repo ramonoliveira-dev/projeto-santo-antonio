@@ -54,3 +54,44 @@ document.addEventListener('DOMContentLoaded', function() {
         revealOnScroll.observe(reveal);
     });
 });
+
+/* 
+  Slide
+ */
+let slideIndex = 1;
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+    if (document.querySelector('.agenda-slider-container')) {
+        showSlides(slideIndex);
+        document.querySelector('.slider-arrow.prev').addEventListener('click', () => changeSlide(-1));
+        document.querySelector('.slider-arrow.next').addEventListener('click', () => changeSlide(1));
+    }
+});
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    
+    slides[slideIndex - 1].classList.add("active");
+    dots[slideIndex - 1].classList.add("active");
+}
