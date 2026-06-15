@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
-            // Altera o ícone visível entre sanduíche (≡) e fechar (✕)
             if (navLinks.classList.contains('active')) {
                 menuToggle.textContent = '✕';
             } else {
