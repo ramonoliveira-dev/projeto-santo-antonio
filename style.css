@@ -392,7 +392,7 @@ body {
     to { opacity: 1; }
 }
 
-/* Estilos para o botão do WhatsApp */
+/* Botão do WhatsApp */
 
 .contact-wrapper {
     margin: 20px 0;
@@ -494,7 +494,7 @@ body {
     font-weight: 500;
 }
 
-/* Estilos de Banner da Página de Ajuda */
+/* Estilo de Banner da Página de Ajuda */
 .page-banner {
     background: radial-gradient(circle at center, #6b1d2f 0%, #1e1518 100%);
     color: #f5f5f5;
@@ -602,7 +602,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Caixa Escura para Tabelas */
+/* Box da Tabela */
 .card-dark {
     background-color: #1e1518;
     color: #f5f5f5;
@@ -627,7 +627,7 @@ body {
     margin-bottom: 35px;
 }
 
-/* Tabelas Customizadas e Responsivas */
+/* Tabelas */
 .table-responsive {
     width: 100%;
     overflow-x: auto;
